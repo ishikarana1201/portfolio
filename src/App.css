@@ -163,11 +163,7 @@ a {
   color: white;
   transition: 0.3s;
 }
-a:hover {
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 /* HOVER EFFECT */
 
 .nav-links li a:hover {
@@ -567,4 +563,17 @@ footer {
   margin-bottom: 10px;
   color: #d1d5db;
   line-height: 1.7;
+}
+.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  box-shadow: 0 0 50px rgba(142,45,226,0.4);
+}
+
+.no-image h1 {
+  font-size: 120px;
+  color: white;
+  letter-spacing: 5px;
 }
