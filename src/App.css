@@ -484,10 +484,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .nav-links {
-    display: none;
-  }
-
   .profile-circle {
     width: 280px;
     height: 280px;
@@ -576,4 +572,147 @@ footer {
   font-size: 120px;
   color: white;
   letter-spacing: 5px;
+}
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 200;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #0b1120;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: 0.4s ease;
+  }
+
+  .mobile-menu {
+    right: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 140px;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left h2 {
+    font-size: 24px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .profile-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about,
+  .contact {
+    flex-direction: column;
+  }
+
+  .about-right,
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    gap: 30px;
+  }
+
+  section {
+    padding: 80px 20px !important;
+  }
+
+  .section-title,
+  .about-left h2,
+  .skills h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .timeline {
+    margin-left: 10px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+}
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .hero-left h1 {
+    font-size: 34px;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .profile-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .tech-stack span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .experience-card h4 {
+    font-size: 14px;
+  }
 }
